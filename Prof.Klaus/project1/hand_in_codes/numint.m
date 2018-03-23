@@ -1,5 +1,6 @@
 %	=== NUMERICAL INTEGRATION ===
 
-function x_new = numint(r, h, x_k)
+function x_new = numint( r, h, x_k, flag )
 
-x_new = sysmodel ( x_k, r, h );
+    x_new = sysmodel ( r, h, x_k, flag );
+end
