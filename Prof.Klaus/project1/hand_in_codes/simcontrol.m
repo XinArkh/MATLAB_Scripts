@@ -17,8 +17,8 @@ k=1;
 for i=h:h:tmax
    
    x1_new=numint(r, h, x1(k), 1);
-   x2_new=numint(r, h, x1(k), 2);
-   x3_new=numint(r, h, x1(k), 3);
+   x2_new=numint(r, h, x2(k), 2);
+   x3_new=numint(r, h, x3(k), 3);
    
    k=k+1;
    x1(k)=x1_new;

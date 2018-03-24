@@ -19,7 +19,7 @@ figure(1)
        'ygrid','on', ...
        'gridlinestyle','-');
 
-    axis([0 12 -0.2 1.2])
+%     axis([0 12 -0.2 1.2])
 
     xlabel('time/(s)')
     ylabel('x')
