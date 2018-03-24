@@ -2,4 +2,4 @@
 
 % === INTEGRATION ALGORITHM ===========================
 %  step size h[s]. Here: stable for about h < 4 sec when using RK3 or EUL.
-   h = 5;
+   h = 0.5;

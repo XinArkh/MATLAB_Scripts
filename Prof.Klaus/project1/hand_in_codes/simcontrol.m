@@ -14,7 +14,7 @@ para_simcontrol  % maximum duration tmax[s]
 plotvorb  % Initializing the output figure
 
 k=1;
-for i=1:h:tmax
+for i=h:h:tmax
    
    x1_new=numint(r, h, x1(k), 1);
    x2_new=numint(r, h, x1(k), 2);
@@ -24,7 +24,17 @@ for i=1:h:tmax
    x1(k)=x1_new;
    x2(k)=x2_new;
    x3(k)=x3_new;
-   t(k)=t(k-1) + h;
+   
+   for j=length(x)+1:i
+       tt(j) = j;
+       x(j) = exp(r*j);
+   end
+   
+   x1_e(k) = exp(r*h*(k-1)) - x1(k);
+   x2_e(k) = exp(r*h*(k-1)) - x2(k);
+   x3_e(k) = exp(r*h*(k-1)) - x3(k);
+   
+   t(k)=i;
    
    plotxyz
    

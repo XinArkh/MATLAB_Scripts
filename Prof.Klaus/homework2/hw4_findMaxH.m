@@ -1,4 +1,4 @@
-function h_crit = findMaxH()
+function h_crit = hw4_findMaxH()
     clear;clc;
     h_crit = 1e10;
     for angle = 0:0.1:90
